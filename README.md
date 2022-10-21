@@ -3,4 +3,4 @@
 ##### ```truffle migrate```
 
 # run server using ```npm run start```
-# server url : ```localhost:8000/api/<specific_route>
+# server url : ```localhost:8000/api/<specific_route>```
