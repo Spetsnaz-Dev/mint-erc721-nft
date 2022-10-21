@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "5b9a760f-8e7e-45f2-b795-6dad37b7183c",
+		"name": "Assigment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2834225"
+	},
+	"item": [
+		{
+			"name": "GET ERC721 Balance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"wallet_address\": \"0x48F10f27abAdffEcE6b4251f5230F1ff926b017f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/getERC721Balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getERC721Balance"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ERC721 Balance",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"wallet_address\": \"0x48F10f27abAdffEcE6b4251f5230F1ff926b017f\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/getERC721Balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getERC721Balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1-NWoZK3kTsExUV00Ywo1G5jlUKKs\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Oct 2022 14:52:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "1"
+				}
+			]
+		},
+		{
+			"name": "Get Owner",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tokenId\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/ownerOf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ownerOf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mint ERC721",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to_address\": \"0x48F10f27abAdffEcE6b4251f5230F1ff926b017f\",\r\n    \"token_uri\": \"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/mintERC721NFT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mintERC721NFT"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Mint ERC721",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"to_address\": \"0x48F10f27abAdffEcE6b4251f5230F1ff926b017f\",\r\n    \"token_uri\": \"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mintERC721NFT",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mintERC721NFT"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2532"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e4-QRWo448K6Rxg4Dj9fKcjBEm1hbY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Oct 2022 19:43:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"blockHash\": \"0xc2dbf4badf1ef42785102b0a18f0b2cfb74ef9c0d73a3941e86587c5899721e3\",\n    \"blockNumber\": 28705427,\n    \"contractAddress\": null,\n    \"cumulativeGasUsed\": 185705,\n    \"effectiveGasPrice\": 1500000009,\n    \"from\": \"0x48f10f27abadffece6b4251f5230f1ff926b017f\",\n    \"gasUsed\": 185705,\n    \"logs\": [\n        {\n            \"address\": \"0x90CFC324083E40EC7fFb488Dec6C66f7c8d081cB\",\n            \"topics\": [\n                \"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\n                \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n                \"0x00000000000000000000000048f10f27abadffece6b4251f5230f1ff926b017f\",\n                \"0x0000000000000000000000000000000000000000000000000000000000000000\"\n            ],\n            \"data\": \"0x\",\n            \"blockNumber\": 28705427,\n            \"transactionHash\": \"0x270ae4396168e648308cb1fa8571a64433507e2156917fa1c1a4027e84ebd180\",\n            \"transactionIndex\": 0,\n            \"blockHash\": \"0xc2dbf4badf1ef42785102b0a18f0b2cfb74ef9c0d73a3941e86587c5899721e3\",\n            \"logIndex\": 0,\n            \"removed\": false,\n            \"id\": \"log_146eaa84\"\n        },\n        {\n            \"address\": \"0x0000000000000000000000000000000000001010\",\n            \"topics\": [\n                \"0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63\",\n                \"0x0000000000000000000000000000000000000000000000000000000000001010\",\n                \"0x00000000000000000000000048f10f27abadffece6b4251f5230f1ff926b017f\",\n                \"0x000000000000000000000000f903ba9e006193c1527bfbe65fe2123704ea3f99\"\n            ],\n            \"data\": \"0x0000000000000000000000000000000000000000000000000000fd58b8d91c690000000000000000000000000000000000000000000000000280652adcb8c55e0000000000000000000000000000000000000000000008150337315a7faa086f000000000000000000000000000000000000000000000000027f67d223dfa8f500000000000000000000000000000000000000000000081503382eb3388324d8\",\n            \"blockNumber\": 28705427,\n            \"transactionHash\": \"0x270ae4396168e648308cb1fa8571a64433507e2156917fa1c1a4027e84ebd180\",\n            \"transactionIndex\": 0,\n            \"blockHash\": \"0xc2dbf4badf1ef42785102b0a18f0b2cfb74ef9c0d73a3941e86587c5899721e3\",\n            \"logIndex\": 1,\n            \"removed\": false,\n            \"id\": \"log_624362c9\"\n        }\n    ],\n    \"logsBloom\": \"0x00000000000000000000000000008000000000000000000000000010000000000000000000000020000000000000000000008000000000000000000000000000000000000000000020000008000000800000000000000000000100000000000000000000020000000000000000800800000000000000000080000010000000000000000000000000000000000000000000000000000000000000000002000000200040000000000000000000000000000000000000000000000000000000004000000202000000000001000000000000000000000000000000100000001020000000000000000000000000000000000000000000000000000000000000100000\",\n    \"status\": true,\n    \"to\": \"0x90cfc324083e40ec7ffb488dec6c66f7c8d081cb\",\n    \"transactionHash\": \"0x270ae4396168e648308cb1fa8571a64433507e2156917fa1c1a4027e84ebd180\",\n    \"transactionIndex\": 0,\n    \"type\": \"0x0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Transfer Ownership",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"new_owner\": \"0xD07159Cc3a440dcbf313D247271D827e9a75B151\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/transferOwnership",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transferOwnership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Safe Transfer From",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\": \"0x48F10f27abAdffEcE6b4251f5230F1ff926b017f\",\r\n    \"to\": \"0xD07159Cc3a440dcbf313D247271D827e9a75B151\",\r\n    \"token_id\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/safeTransferFrom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"safeTransferFrom"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
